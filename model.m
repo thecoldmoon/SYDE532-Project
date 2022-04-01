@@ -31,7 +31,7 @@ for a = 1:iterations
         for n = 1:GRID_SIZE
             if grid(m,n) ~= 0
 
-                %% If threshold is met, move to empty location. Can also set this to
+                %% If threshold is met, move to empty location (or update value at current)
                 if (avg_neighbour_value(m,n,grid) > THRESHOLD)
                     % Choose random place to replace
                     row = randi([1, ZEROS_SIZE],1);
