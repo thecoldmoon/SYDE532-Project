@@ -5,7 +5,7 @@ types = [1,2,3];
 
 % Agent moves/changes if threshold is met. Set a % of grid for empty space
 THRESHOLD = 0.6;
-PERCENTAGE_RNDSPACE = 0.05;
+PERCENTAGE_EMPTY = 0.05;
 GRID_SIZE = 100;
 iterations = 200;
 old_grid = [];
@@ -14,7 +14,7 @@ data = [];
 grid = randi([1 3],GRID_SIZE,GRID_SIZE);
 
 % Choose Random Points for Empty Space
-ZEROS_SIZE = round(40*40*PERCENTAGE_RNDSPACE);
+ZEROS_SIZE = round(40*40*PERCENTAGE_EMPTY);
 x = randi([1, 40],1,ZEROS_SIZE);
 y = randi([1, 40],1,ZEROS_SIZE);
 
