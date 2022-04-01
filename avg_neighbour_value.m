@@ -1,4 +1,7 @@
 function average_neighbour_value = avg_neighbour_value(m,n,grid)
+    
+    % Take in only available neighbours. This is 8 niehgbours, so rid of first 4 if doing 4
+    % neighbours
     elements = [];
 
     if m ~= 1 && n ~= 1
