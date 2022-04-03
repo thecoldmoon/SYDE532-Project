@@ -29,5 +29,5 @@ function average_neighbour_value = avg_neighbour_value(m,n,size,grid)
         elements = [elements, grid(m, n+1)];
     end
     
-    average_neighbour_value = sum(elements,'all')/length(elements(elements~=0));
+    average_neighbour_value = sum(elements(elements~=0),'all')/length(elements);
 end
